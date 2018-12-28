@@ -25,7 +25,7 @@ void constructHTTPRequest(char* msg){
 
 
 void sendHTTPRequest(char* msg){
-  // strcat(msg, "t=2016-12-18,23:01:00");
+  // strcat(msg, "t=2018-12-18,23:01:00");
   // strcat(msg, "&");
   // strcat(msg, "te=30.0");
   // strcat(msg, "&");
