@@ -14,7 +14,8 @@ void convertToChar(Data* data, A7Client a7Client){
 
 void printCharData(){
 	Serial.print(F("Temperature: "));
-  	Serial.println(temperature);
+        sensors.requestTemperatures();
+        Serial.println(sensors.getTempCByIndex(0));
   	Serial.println(freeRam());
   	Serial.print(F("pH: "));
   	Serial.println(pH);
