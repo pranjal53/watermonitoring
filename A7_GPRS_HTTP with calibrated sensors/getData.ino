@@ -54,7 +54,7 @@ void getData(Data* data){
   //subtract 0.88 to get 0-3.52V
   //subtract by 1.76 to get -1.76 - 1.76
   //divide by 1.76 and multiply with 50 to get Temperature value in degree Celsius
-  ((datatemperature*(5.0/1023.0)-0.88)-1.76)/1.76*50;
+  data->temperature = ((datatemperature*(1023.0/1023.0)-0.)-0.0)/1.76*0.5681818181818182;
 
 	//Turbidity value
   //0-3.45V, 0-4000 NTU units
