@@ -1,6 +1,6 @@
 void constructHTTPRequest(char* msg){  
   msg[0] = 0; //reset the string  
-  strcat(msg, "GET /update?api_key=2VWFSWL3N5N0CUBD");  
+  strcat(msg, "GET ");  
   strcat(msg, "&field1=");
   strcat(msg, temperature);
   strcat(msg, "&");
