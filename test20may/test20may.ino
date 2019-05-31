@@ -8,10 +8,10 @@
 TinyGPS gps;
 SoftwareSerial ss(10, 11); // Arduino RX, TX to conenct to GPS module.
 
-#define SENSOR_PIN A3
+#define ONE_WIRE_BUS 4
 #define Turbidity_dpin A0
 
-OneWire oneWire(SENSOR_PIN);
+OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
 float temperature;
