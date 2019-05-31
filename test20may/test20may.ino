@@ -6,7 +6,7 @@
 #include <SoftwareSerial.h>
 #include <TinyGPS.h>
 TinyGPS gps;
-SoftwareSerial ss(10, 11); // Arduino RX, TX to conenct to GPS module.
+SoftwareSerial ss(12, 13); // Arduino RX, TX to conenct to GPS module.
 
 #define ONE_WIRE_BUS 4
 #define Turbidity_dpin A0
